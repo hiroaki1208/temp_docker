@@ -4,12 +4,12 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - "hellow-world/**"
+      - "hello-world/**"
       - ".github/workflows/build-and-push.yml"
   push:
     branches: [ main ]
     paths:
-      - "hellow-world/**"
+      - "hello-world/**"
       - ".github/workflows/build-and-push.yml"
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # プロジェクトはtrading-prod-468212でよかった？特定サービスではなく、別で管理した方がよい？（SAも）
-      IMAGE: asia-northeast1-docker.pkg.dev/trading-prod-468212/temp-repo/hellow-world:latest
+      IMAGE: asia-northeast1-docker.pkg.dev/trading-prod-468212/temp-repo/hello-world:latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,5 +32,5 @@ jobs:
 
       - name: Build and Push
         run: |
-          docker build -t "$IMAGE" -f hellow-world/Dockerfile hellow-world
+          docker build -t "$IMAGE" -f hello-world/Dockerfile hello-world
           docker push "$IMAGE"

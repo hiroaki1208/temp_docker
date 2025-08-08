@@ -92,12 +92,12 @@ docker run asia-northeast1-docker.pkg.dev/trading-prod-468212/temp-repo/hellow-w
 
 - **プロジェクトID**: 現在は `trading-prod-468212` を使用
 - **リポジトリ名**: 現在は `temp-repo` を使用
-- **イメージ名**: 現在は `hellow-world` を使用
+- **イメージ名**: 現在は `hello-world` を使用
 - **リージョン**: 現在は `asia-northeast1`（東京）を使用
 - **トリガーパス**: デプロイをトリガーするファイル変更のパス
 
 ## 注意事項
 
 - ワークフローファイル内でプロジェクトIDが直接指定されています
-- `hellow-world` ディレクトリ名がパスで使用されています（hello-worldではなく）
+- `hello-world` ディレクトリ名がパスで使用されています（hello-worldではなく）
 - 本番環境では、プロジェクトやサービスアカウントを別途管理することを検討してください
