@@ -1,6 +1,11 @@
 name: Build and Push to Artifact Registry
 
 on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "hellow-world/**"
+      - ".github/workflows/build-and-push.yml"
   push:
     branches: [ main ]
     paths:
