@@ -3,7 +3,7 @@
 This is a simple Docker application that prints "hello world".
 
 ## How to build and run
-0. (ローカルで実行する場合)Docker Dexktopを起動。仮想環境は`env2`
+0. (ローカルで実行する場合)Docker Desktopを起動。仮想環境は`env2`
 
 1. Build the Docker image:
    ```
